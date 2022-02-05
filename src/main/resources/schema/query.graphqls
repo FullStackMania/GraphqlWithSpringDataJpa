@@ -1,0 +1,17 @@
+type Query{
+student(id : Long) : StudentResponse
+}
+
+type StudentResponse{
+id : Long
+firstName : String
+lastName : String
+email : String 
+subjects : [SubjectResponse]
+}
+
+type SubjectResponse{
+id: Long
+subjectName : String
+marks : Float
+}
